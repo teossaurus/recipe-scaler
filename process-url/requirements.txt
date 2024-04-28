@@ -1,6 +1,5 @@
-selenium
-justext
+functions-framework
 html2text
 lxml_html_clean
-functions-framework
+openai
 requests
