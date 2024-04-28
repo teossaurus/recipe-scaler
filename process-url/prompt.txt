@@ -10,7 +10,7 @@ Create a json object that reflects the recipe contained in the recipe_website_te
 Structure your response as a json with the following keys.
 * `ingredients` (list[dict]): Each dict in this list should have the following keys:
     - `ingredient_name` (str)
-    - `quantity` (int)
+    - `quantity` (int): Always convert fractions to decimals.
     - `unit_of_measurement` (str)
     - `prep_notes` (str): Include this if the ingredient list specifies how the ingredient should be prepped, e.g., *diced* tomatoes
 * `recipe_steps` (list[dict]): Each dict in this list should have the following keys:
