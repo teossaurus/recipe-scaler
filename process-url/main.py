@@ -67,6 +67,4 @@ def handler(request):
     prompt = get_prompt()
     prompt_with_text = prompt.replace("<recipe_website_text/>", "<recipe_website_text>" + text + "</recipe_website_text>")
     chatgpt_response = generate(prompt_with_text)
-    return {
-        "chatgpt_response": chatgpt_response
-    }
+    return chatgpt_response
