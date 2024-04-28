@@ -13,21 +13,6 @@ Structure your response as a json with the following keys.
     - `quantity` (int): Always convert fractions to decimals.
     - `unit_of_measurement` (str)
     - `prep_notes` (str): Include this if the ingredient list specifies how the ingredient should be prepped, e.g., *diced* tomatoes
-* `recipe_steps` (list[dict]): Each dict in this list should have the following keys:
-    - `step` (int): The index of the step. Start from 0. 
-    - `text` (str): The text of the step, pulled verbatim from the screenshot(s). IMPORTANT: Put any implements, temperatures, and times between double brackets.
-* `cooking_implements` (list[dict]): This list should capture all implements that may need to be changed when the recipe is scaled up or down, like pots and pans with specific sizes. Each dict in this list should have the following keys:
-    - `implement_name` (str)
-    - `implement_size` (str)
-    - `step` (list[int]): The index of all steps that explicitly mention this implement.
-* `cooking_temps` (list[dict]): Each dict in this list should have the following keys:
-    - `temp_value` (int)
-    - `temp_unit` (str)
-    - `step` (list[int]): The index of all steps that explicitly mention this temperature.
-* `cooking_times` (list[dict]): Each dict in this list should have the following keys:
-    - `time_value` (int)
-    - `time_unit` (str)
-    - `step` (list[int]): The index of all steps that explicitly mention this cooking time.
 </required response format>
 
 <recipe_website_text/>
