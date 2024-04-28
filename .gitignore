@@ -1,3 +1,5 @@
 env/
 testing/
 .env.yaml
+*/__pycache__/
+

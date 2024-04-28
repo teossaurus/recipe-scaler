@@ -1,3 +1,6 @@
 selenium
 justext
+html2text
+lxml_html_clean
 functions-framework
+requests
